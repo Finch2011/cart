@@ -35,8 +35,8 @@ document.getElementById('submit-rsvp').addEventListener('click', function() {
     const guestCount = document.getElementById('guest-count').value;
     const data = {
       name:name,
-      guestCount:guestCount,
-      attendance: attendance
+      guestCount,
+      attendance
     }
     console.log(guestCount , name , attendance)
     if (!name) {
