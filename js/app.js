@@ -34,9 +34,10 @@ document.getElementById('submit-rsvp').addEventListener('click', function() {
     const attendance = document.querySelector('input[name="attendance"]:checked').value;
     const guestCount = document.getElementById('guest-count').value;
     const data = {
-      name:name,
-      guestCount,
-      attendance
+    name: name,
+    attendance: attendance,
+    guestCount: guestCount,
+     createdAt: new Date().toISOString()
     }
     console.log(guestCount , name , attendance)
     if (!name) {
